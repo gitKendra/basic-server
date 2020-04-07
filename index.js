@@ -14,11 +14,12 @@ app.get("/no-cors", (req, res) => {
 
   /* -------------------------------------------------------------------------- */
 
-  app.head("/", cors(), (req, res) => {
+  app.use(cors())
+  app.head("/", (req, res) => {
     console.info("HEAD /");
     res.sendStatus(204);
   });
-  app.get("/", cors(), (req, res) => {
+  app.get("/", (req, res) => {
     console.info("GET / - simple-cors");
     res.json({
       text: "Simple CORS requests are working. [GET]"
