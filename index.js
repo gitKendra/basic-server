@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "http://dijatek.net.s3-website.us-east-2.amazonaws.com/"); // update to match the domain you will make the request from
