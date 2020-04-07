@@ -1,0 +1,23 @@
+{
+  "name": "basic-server",
+  "version": "1.0.0",
+  "description": "to test cors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitKendra/basic-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitKendra/basic-server/issues"
+  },
+  "homepage": "https://github.com/gitKendra/basic-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
